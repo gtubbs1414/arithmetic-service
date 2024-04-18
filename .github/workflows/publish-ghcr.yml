@@ -18,6 +18,6 @@ jobs:
           docker push ghcr.io/gtubbs1414/arithmetic-service:1
       - name: Publish the image to azure container registry
         run: |
-          docker login --username gtubbspracticum15 --password ${{secrets.AZURE_CONTAINER_REGISTRY}} gtubbspracticum15.azurecr.io
-          docker tag ghcr.io/gtubbs1414/arithmetic-service:1 gtubbspracticum15.azurecr.io/arithmetic-service:1
-          docker push gtubbspracticum15.azurecr.io/arithmetic-service:1
+          docker login --username gtubbspracticum16 --password ${{secrets.AZURE_CONTAINER_REGISTRY}} gtubbspracticum16.azurecr.io
+          docker tag ghcr.io/gtubbs1414/arithmetic-service:1 gtubbspracticum16.azurecr.io/arithmetic-service:1
+          docker push gtubbspracticum16.azurecr.io/arithmetic-service:1
